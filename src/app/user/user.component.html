@@ -1,0 +1,10 @@
+<div *ngIf="userDetails?.length>0">
+        <h2>Records Found</h2>
+        <ul>
+            <li *ngFor="let user of userDetails">{{user.id}} -{{ user.name }}</li>
+        </ul>    
+</div>
+
+<div *ngIf="userDetails?.length==0">
+        <h2> NO records found</h2>
+</div>
